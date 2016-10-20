@@ -1,4 +1,4 @@
-Squid 
+# Squid 
 http://www.squid-cache.org/Versions/v3/3.5/
 
 Squid is a fully-featured HTTP/1.0 proxy which is almost (but not quite - we're getting there!) a fully-featured HTTP/1.1 proxy. Squid offers a rich access control, authorization and logging environment to develop web proxy and content serving applications. Squid offers a rich set of traffic optimization options, most of which are enabled by default for simpler installation and high performance.
