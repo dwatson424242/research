@@ -1,0 +1,318 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'node-gyp',
+1 verbose cli   'configure' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'node-gyp', null ]
+7 verbose cache add spec node-gyp
+8 silly cache add args [ 'configure', null ]
+9 verbose cache add spec configure
+10 silly cache add parsed spec Result {
+10 silly cache add   raw: 'node-gyp',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'node-gyp',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: 'latest',
+10 silly cache add   type: 'tag' }
+11 silly addNamed node-gyp@latest
+12 verbose addNamed "latest" is being treated as a dist-tag for node-gyp
+13 info addNameTag [ 'node-gyp', 'latest' ]
+14 silly mapToRegistry name node-gyp
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'node-gyp',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   name: 'node-gyp',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/node-gyp
+19 verbose addNameTag registry:https://registry.npmjs.org/node-gyp not in flight; fetching
+20 silly cache add parsed spec Result {
+20 silly cache add   raw: 'configure',
+20 silly cache add   scope: null,
+20 silly cache add   name: 'configure',
+20 silly cache add   rawSpec: '',
+20 silly cache add   spec: 'latest',
+20 silly cache add   type: 'tag' }
+21 silly addNamed configure@latest
+22 verbose addNamed "latest" is being treated as a dist-tag for configure
+23 info addNameTag [ 'configure', 'latest' ]
+24 silly mapToRegistry name configure
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry data Result {
+27 silly mapToRegistry   raw: 'configure',
+27 silly mapToRegistry   scope: null,
+27 silly mapToRegistry   name: 'configure',
+27 silly mapToRegistry   rawSpec: '',
+27 silly mapToRegistry   spec: 'latest',
+27 silly mapToRegistry   type: 'tag' }
+28 silly mapToRegistry uri https://registry.npmjs.org/configure
+29 verbose addNameTag registry:https://registry.npmjs.org/configure not in flight; fetching
+30 verbose request uri https://registry.npmjs.org/node-gyp
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 1:49:11 PM
+33 verbose request id 50214c3874ad2b96
+34 http request GET https://registry.npmjs.org/node-gyp
+35 verbose request uri https://registry.npmjs.org/configure
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 1:49:11 PM
+38 http request GET https://registry.npmjs.org/configure
+39 http 200 https://registry.npmjs.org/node-gyp
+40 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   etag: '"4KJTVW1XOC1M773UXMR3CFM71"',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'content-encoding': 'gzip',
+40 verbose headers   'cache-control': 'max-age=300',
+40 verbose headers   'content-length': '15795',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   date: 'Wed, 22 Jun 2016 20:49:11 GMT',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   age: '36',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'x-served-by': 'cache-lax1428-LAX',
+40 verbose headers   'x-cache': 'HIT',
+40 verbose headers   'x-cache-hits': '2',
+40 verbose headers   'x-timer': 'S1466628551.659294,VS0,VE0',
+40 verbose headers   vary: 'Accept-Encoding' }
+41 silly get cb [ 200,
+41 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+41 silly get     etag: '"4KJTVW1XOC1M773UXMR3CFM71"',
+41 silly get     'content-type': 'application/json',
+41 silly get     'content-encoding': 'gzip',
+41 silly get     'cache-control': 'max-age=300',
+41 silly get     'content-length': '15795',
+41 silly get     'accept-ranges': 'bytes',
+41 silly get     date: 'Wed, 22 Jun 2016 20:49:11 GMT',
+41 silly get     via: '1.1 varnish',
+41 silly get     age: '36',
+41 silly get     connection: 'keep-alive',
+41 silly get     'x-served-by': 'cache-lax1428-LAX',
+41 silly get     'x-cache': 'HIT',
+41 silly get     'x-cache-hits': '2',
+41 silly get     'x-timer': 'S1466628551.659294,VS0,VE0',
+41 silly get     vary: 'Accept-Encoding' } ]
+42 verbose get saving node-gyp to /Users/dwatson/.npm/registry.npmjs.org/node-gyp/.cache.json
+43 verbose correctMkdir /Users/dwatson/.npm correctMkdir not in flight; initializing
+44 silly addNameTag next cb for node-gyp with tag latest
+45 silly addNamed node-gyp@3.3.1
+46 verbose addNamed "3.3.1" is a plain semver version for node-gyp
+47 silly mapToRegistry name node-gyp
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry data Result {
+50 silly mapToRegistry   raw: 'node-gyp',
+50 silly mapToRegistry   scope: null,
+50 silly mapToRegistry   name: 'node-gyp',
+50 silly mapToRegistry   rawSpec: '',
+50 silly mapToRegistry   spec: 'latest',
+50 silly mapToRegistry   type: 'tag' }
+51 silly mapToRegistry uri https://registry.npmjs.org/node-gyp
+52 verbose addRemoteTarball https://registry.npmjs.org/node-gyp/-/node-gyp-3.3.1.tgz not in flight; adding
+53 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-gyp/-/node-gyp-3.3.1.tgz',
+53 verbose addRemoteTarball   '80f7b6d7c2f9c0495ba42c518a670c99bdf6e4a0' ]
+54 info retry fetch attempt 1 at 1:49:11 PM
+55 info attempt registry request try #1 at 1:49:11 PM
+56 http fetch GET https://registry.npmjs.org/node-gyp/-/node-gyp-3.3.1.tgz
+57 http fetch 200 https://registry.npmjs.org/node-gyp/-/node-gyp-3.3.1.tgz
+58 http 200 https://registry.npmjs.org/configure
+59 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+59 verbose headers   etag: '"T3OKZ562KLN344LQHQQI8YKS"',
+59 verbose headers   'content-type': 'application/json',
+59 verbose headers   'content-encoding': 'gzip',
+59 verbose headers   'cache-control': 'max-age=300',
+59 verbose headers   'content-length': '2522',
+59 verbose headers   'accept-ranges': 'bytes',
+59 verbose headers   date: 'Wed, 22 Jun 2016 20:49:11 GMT',
+59 verbose headers   via: '1.1 varnish',
+59 verbose headers   age: '0',
+59 verbose headers   connection: 'keep-alive',
+59 verbose headers   'x-served-by': 'cache-lax1436-LAX',
+59 verbose headers   'x-cache': 'MISS',
+59 verbose headers   'x-cache-hits': '0',
+59 verbose headers   'x-timer': 'S1466628551.654134,VS0,VE88',
+59 verbose headers   vary: 'Accept-Encoding' }
+60 silly get cb [ 200,
+60 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+60 silly get     etag: '"T3OKZ562KLN344LQHQQI8YKS"',
+60 silly get     'content-type': 'application/json',
+60 silly get     'content-encoding': 'gzip',
+60 silly get     'cache-control': 'max-age=300',
+60 silly get     'content-length': '2522',
+60 silly get     'accept-ranges': 'bytes',
+60 silly get     date: 'Wed, 22 Jun 2016 20:49:11 GMT',
+60 silly get     via: '1.1 varnish',
+60 silly get     age: '0',
+60 silly get     connection: 'keep-alive',
+60 silly get     'x-served-by': 'cache-lax1436-LAX',
+60 silly get     'x-cache': 'MISS',
+60 silly get     'x-cache-hits': '0',
+60 silly get     'x-timer': 'S1466628551.654134,VS0,VE88',
+60 silly get     vary: 'Accept-Encoding' } ]
+61 verbose get saving configure to /Users/dwatson/.npm/registry.npmjs.org/configure/.cache.json
+62 verbose correctMkdir /Users/dwatson/.npm correctMkdir not in flight; initializing
+63 silly addNameTag next cb for configure with tag latest
+64 silly addNamed configure@0.0.1
+65 verbose addNamed "0.0.1" is a plain semver version for configure
+66 silly mapToRegistry name configure
+67 silly mapToRegistry using default registry
+68 silly mapToRegistry registry https://registry.npmjs.org/
+69 silly mapToRegistry data Result {
+69 silly mapToRegistry   raw: 'configure',
+69 silly mapToRegistry   scope: null,
+69 silly mapToRegistry   name: 'configure',
+69 silly mapToRegistry   rawSpec: '',
+69 silly mapToRegistry   spec: 'latest',
+69 silly mapToRegistry   type: 'tag' }
+70 silly mapToRegistry uri https://registry.npmjs.org/configure
+71 verbose addRemoteTarball https://registry.npmjs.org/configure/-/configure-0.0.1.tgz not in flight; adding
+72 verbose addRemoteTarball [ 'https://registry.npmjs.org/configure/-/configure-0.0.1.tgz',
+72 verbose addRemoteTarball   '54cffdabeb3238b67daab17d2933ec01cac41317' ]
+73 info retry fetch attempt 1 at 1:49:11 PM
+74 info attempt registry request try #1 at 1:49:11 PM
+75 http fetch GET https://registry.npmjs.org/configure/-/configure-0.0.1.tgz
+76 http fetch 200 https://registry.npmjs.org/configure/-/configure-0.0.1.tgz
+77 silly fetchAndShaCheck shasum 54cffdabeb3238b67daab17d2933ec01cac41317
+78 verbose addTmpTarball /var/folders/p3/c6bdbjv931v579c5g7lthffh0000gn/T/npm-4509-6bc1a28d/registry.npmjs.org/configure/-/configure-0.0.1.tgz not in flight; adding
+79 verbose addTmpTarball already have metadata; skipping unpack for configure@0.0.1
+80 verbose correctMkdir /Users/dwatson/.npm correctMkdir not in flight; initializing
+81 silly cache afterAdd configure@0.0.1
+82 verbose afterAdd /Users/dwatson/.npm/configure/0.0.1/package/package.json not in flight; writing
+83 verbose correctMkdir /Users/dwatson/.npm correctMkdir not in flight; initializing
+84 verbose afterAdd /Users/dwatson/.npm/configure/0.0.1/package/package.json written
+85 silly fetchAndShaCheck shasum 80f7b6d7c2f9c0495ba42c518a670c99bdf6e4a0
+86 verbose addTmpTarball /var/folders/p3/c6bdbjv931v579c5g7lthffh0000gn/T/npm-4509-6bc1a28d/registry.npmjs.org/node-gyp/-/node-gyp-3.3.1.tgz not in flight; adding
+87 verbose addTmpTarball already have metadata; skipping unpack for node-gyp@3.3.1
+88 verbose correctMkdir /Users/dwatson/.npm correctMkdir not in flight; initializing
+89 silly cache afterAdd node-gyp@3.3.1
+90 verbose afterAdd /Users/dwatson/.npm/node-gyp/3.3.1/package/package.json not in flight; writing
+91 verbose correctMkdir /Users/dwatson/.npm correctMkdir not in flight; initializing
+92 verbose afterAdd /Users/dwatson/.npm/node-gyp/3.3.1/package/package.json written
+93 silly install resolved [ { name: 'configure',
+93 silly install resolved     main: './main.js',
+93 silly install resolved     description: 'A simple multiple-configuration management module.',
+93 silly install resolved     version: '0.0.1',
+93 silly install resolved     author: { name: 'Randolpho St. John' },
+93 silly install resolved     bugs: { name: 'https://github.com/randolpho/node-configure/issues' },
+93 silly install resolved     repository:
+93 silly install resolved      { type: 'git',
+93 silly install resolved        url: 'git://github.com/randolpho/node-configure.git' },
+93 silly install resolved     config:
+93 silly install resolved      { notFound: 'throw',
+93 silly install resolved        defaultConfigFile: 'config.json',
+93 silly install resolved        commandLineSwitchName: 'config' },
+93 silly install resolved     dependencies: { optimist: '>=0.3.4' },
+93 silly install resolved     directories: { lib: '.' },
+93 silly install resolved     keywords: [ 'config', 'configure', 'configuration', 'options', 'settings' ],
+93 silly install resolved     engine: { node: '>=0.6.11' },
+93 silly install resolved     scripts:
+93 silly install resolved      { install: 'node install.js',
+93 silly install resolved        start: 'node install.js',
+93 silly install resolved        test: 'node ./test/testCoordinator.js' },
+93 silly install resolved     _npmUser: { name: 'randolpho', email: 'randolpho@gmail.com' },
+93 silly install resolved     _id: 'configure@0.0.1',
+93 silly install resolved     devDependencies: {},
+93 silly install resolved     optionalDependencies: {},
+93 silly install resolved     engines: { node: '*' },
+93 silly install resolved     _engineSupported: true,
+93 silly install resolved     _npmVersion: '1.1.1',
+93 silly install resolved     _nodeVersion: 'v0.6.11',
+93 silly install resolved     _defaultsLoaded: true,
+93 silly install resolved     dist:
+93 silly install resolved      { shasum: '54cffdabeb3238b67daab17d2933ec01cac41317',
+93 silly install resolved        tarball: 'https://registry.npmjs.org/configure/-/configure-0.0.1.tgz' },
+93 silly install resolved     maintainers: [ [Object] ],
+93 silly install resolved     _shasum: '54cffdabeb3238b67daab17d2933ec01cac41317',
+93 silly install resolved     _resolved: 'https://registry.npmjs.org/configure/-/configure-0.0.1.tgz',
+93 silly install resolved     _from: 'configure@latest' },
+93 silly install resolved   { name: 'node-gyp',
+93 silly install resolved     description: 'Node.js native addon build tool',
+93 silly install resolved     license: 'MIT',
+93 silly install resolved     keywords: [ 'native', 'addon', 'module', 'c', 'c++', 'bindings', 'gyp' ],
+93 silly install resolved     version: '3.3.1',
+93 silly install resolved     installVersion: 9,
+93 silly install resolved     author:
+93 silly install resolved      { name: 'Nathan Rajlich',
+93 silly install resolved        email: 'nathan@tootallnate.net',
+93 silly install resolved        url: 'http://tootallnate.net' },
+93 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/node-gyp.git' },
+93 silly install resolved     preferGlobal: true,
+93 silly install resolved     bin: { 'node-gyp': './bin/node-gyp.js' },
+93 silly install resolved     main: './lib/node-gyp.js',
+93 silly install resolved     dependencies:
+93 silly install resolved      { fstream: '^1.0.0',
+93 silly install resolved        glob: '3 || 4',
+93 silly install resolved        'graceful-fs': '^4.1.2',
+93 silly install resolved        minimatch: '1',
+93 silly install resolved        mkdirp: '^0.5.0',
+93 silly install resolved        nopt: '2 || 3',
+93 silly install resolved        npmlog: '0 || 1 || 2',
+93 silly install resolved        osenv: '0',
+93 silly install resolved        'path-array': '^1.0.0',
+93 silly install resolved        request: '2',
+93 silly install resolved        rimraf: '2',
+93 silly install resolved        semver: '2.x || 3.x || 4 || 5',
+93 silly install resolved        tar: '^2.0.0',
+93 silly install resolved        which: '1' },
+93 silly install resolved     engines: { node: '>= 0.8.0' },
+93 silly install resolved     devDependencies: { tape: '~4.2.0' },
+93 silly install resolved     scripts: { test: 'tape test/test-*' },
+93 silly install resolved     gitHead: '1dcf356ca7b658789447108b29a985c00ffcf0f5',
+93 silly install resolved     bugs: { url: 'https://github.com/nodejs/node-gyp/issues' },
+93 silly install resolved     homepage: 'https://github.com/nodejs/node-gyp#readme',
+93 silly install resolved     _id: 'node-gyp@3.3.1',
+93 silly install resolved     _shasum: '80f7b6d7c2f9c0495ba42c518a670c99bdf6e4a0',
+93 silly install resolved     _from: 'node-gyp@latest',
+93 silly install resolved     _npmVersion: '3.3.12',
+93 silly install resolved     _nodeVersion: '6.0.0-pre',
+93 silly install resolved     _npmUser: { name: 'bnoordhuis', email: 'info@bnoordhuis.nl' },
+93 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+93 silly install resolved     dist:
+93 silly install resolved      { shasum: '80f7b6d7c2f9c0495ba42c518a670c99bdf6e4a0',
+93 silly install resolved        tarball: 'https://registry.npmjs.org/node-gyp/-/node-gyp-3.3.1.tgz' },
+93 silly install resolved     _npmOperationalInternal:
+93 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+93 silly install resolved        tmp: 'tmp/node-gyp-3.3.1.tgz_1457115144174_0.4018901875242591' },
+93 silly install resolved     directories: {},
+93 silly install resolved     _resolved: 'https://registry.npmjs.org/node-gyp/-/node-gyp-3.3.1.tgz' } ]
+94 info install configure@0.0.1 into /usr/local/lib
+95 info install node-gyp@3.3.1 into /usr/local/lib
+96 info installOne configure@0.0.1
+97 verbose installOne of configure to /usr/local/lib not in flight; installing
+98 verbose correctMkdir /Users/dwatson/.npm/_locks correctMkdir not in flight; initializing
+99 info installOne node-gyp@3.3.1
+100 verbose installOne of node-gyp to /usr/local/lib not in flight; installing
+101 verbose correctMkdir /Users/dwatson/.npm/_locks correctMkdir already in flight; waiting
+102 warn locking Error: EACCES: permission denied, open '/Users/dwatson/.npm/_locks/configure-f314cb79bbe7fd55.lock'
+102 warn locking     at Error (native)
+102 warn locking  /Users/dwatson/.npm/_locks/configure-f314cb79bbe7fd55.lock failed { [Error: EACCES: permission denied, open '/Users/dwatson/.npm/_locks/configure-f314cb79bbe7fd55.lock']
+102 warn locking   errno: -13,
+102 warn locking   code: 'EACCES',
+102 warn locking   syscall: 'open',
+102 warn locking   path: '/Users/dwatson/.npm/_locks/configure-f314cb79bbe7fd55.lock' }
+103 verbose stack Error: Attempt to unlock /usr/local/lib/node_modules/configure, which hasn't been locked
+103 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:64:11)
+103 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1018:5)
+103 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1022:20
+103 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:39:7
+103 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+103 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+103 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:232:16
+103 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+104 verbose cwd /Users/dwatson/Sites/dev/nodejs/c_addons
+105 error Darwin 15.5.0
+106 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "node-gyp" "configure"
+107 error node v4.4.5
+108 error npm  v2.15.5
+109 error Attempt to unlock /usr/local/lib/node_modules/configure, which hasn't been locked
+110 error If you need help, you may report this error at:
+110 error     <https://github.com/npm/npm/issues>
+111 verbose exit [ 1, true ]
