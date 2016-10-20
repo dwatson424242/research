@@ -1,4 +1,4 @@
-Test Driven Development Notes
+# Test Driven Development Notes
 
 Function Testing
 1) When writing a funciton, have a test to ensure that it is there and exists.
