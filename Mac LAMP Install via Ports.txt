@@ -1,0 +1,38 @@
+#install mysql server
+sudo port install mysql5-server-devel
+#make mysql run at startup
+sudo port load mysql5-server-devel
+#setting up mysql
+sudo -u _mysql mysql_install_db5
+#starting mysql for the first time
+cd /opt/local ; sudo /opt/local/lib/mysql5/bin/mysqld_safe &
+#changing the root password for mysql
+/opt/local/lib/mysql5/bin/mysqladmin -u root password 'r0xv83s'
+#adding command to profile
+echo "" >> ~/.profile
+echo "# MacPorts MySQL alias" >> ~/.profile
+echo "alias mysqlstart='sudo mysqld_safe5 &'" >> ~/.profile
+echo "alias mysqlstop='mysqladmin5 -u root -pr0xv83s shutdown'" >> ~/.profile
+echo "" >> ~/.profile
+sh ~/.profile
+
+#install php and apache
+sudo port install php5 php5-curl php5-gd php5-mbstring php5-mcrypt php5-memcache php5-mysql php5-openssl php5-soap php5-zip
+#run apache at statup
+sudo port load apache2
+#adding command to profile
+echo "" >> ~/.profile
+echo "# MacPorts Apache2 alias" >> ~/.profile
+echo "alias apache2ctl='sudo /opt/local/apache2/bin/apachectl'" >> ~/.profile
+echo "" >> ~/.profile
+sh ~/.profile
+# activating php in apache
+cd /opt/local/apache2/modules;sudo /opt/local/apache2/bin/apxs -a -e -n "php5" libphp5.so
+# creating phpinfo
+sudo sh -c 'echo "<?php phpinfo(); ?>" >> /opt/local/apache2/htdocs/phpinfo.php'
+#run memcached at startup
+sudo port load memcached
+#install git
+sudo port install git-core
+
+
