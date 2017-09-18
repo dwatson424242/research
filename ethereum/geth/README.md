@@ -73,4 +73,12 @@ sudo supervisorctl reload
 geth attach http://127.0.0.1:8545
 ```
 
+NOTE: Be sure that the permissions are setup properly on the AWS instance. Port 8545 must be open.  Also, the command may need to change to --rpcaddr <awsec2.instance.name>
 
+```
+[program:geth]
+command=/usr/bin/geth --datadir /home/ubuntu/.ethereum/mainnet/geth.ipc --rpc --rpcaddr ec2-35-165-65-171.us-west-2.compute.amazonaws.com --rpcport 8545 --rpccorsdomain * --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3
+
+geth attach http://ec2-35-165-65-171.us-west-2.compute.amazonaws.com:8545
+
+```
