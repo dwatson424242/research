@@ -46,7 +46,31 @@ $ free -mh # now you should see your swap usage.
 geth --datadir .ethereum/mainnet/ --fast
 ```
 
+1.1.6 Once the blockchain has been downloaded, automatically run GETH
 
- 
+https://hiddentao.com/archives/2016/05/04/setting-up-geth-ethereum-node-to-run-automatically-on-ubuntu/
+```
+sudo apt-get install supervisor 
+sudo vim /etc/supervisor/conf.d/geth.conf
+```
 
-This is a basic list of technologies that I have looked at, experimented with, and that may or may not be useful. Everything here is for learning and experimenting.
+geth.conf
+```
+[program:geth]
+command=/usr/bin/geth --datadir /home/ubuntu/.ethereum/mainnet/geth.ipc --rpc --rpcaddr 127.0.0.1 --rpcport 8545 --rpccorsdomain * --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3
+autostart=true  
+autorestart=true  
+stderr_logfile=/var/log/supervisor/geth.err.log  
+stdout_logfile=/var/log/supervisor/geth.out.log  
+```
+
+```
+sudo supervisorctl reload  
+```
+
+1.1.7 - Now attach to the local RPC Server:
+```
+geth attach http://127.0.0.1:8545
+```
+
+
